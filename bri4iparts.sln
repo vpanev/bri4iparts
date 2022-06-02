@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bri4iparts", "bri4iparts\bri4iparts.csproj", "{0AE451CC-9874-48FF-80FC-8F1C1450F6C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bri4iparts.Data", "bri4iparts.Data\bri4iparts.Data.csproj", "{7042BB3F-0F76-41B2-A0BF-9BFF1F3E5FE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AE451CC-9874-48FF-80FC-8F1C1450F6C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE451CC-9874-48FF-80FC-8F1C1450F6C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE451CC-9874-48FF-80FC-8F1C1450F6C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE451CC-9874-48FF-80FC-8F1C1450F6C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7042BB3F-0F76-41B2-A0BF-9BFF1F3E5FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7042BB3F-0F76-41B2-A0BF-9BFF1F3E5FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7042BB3F-0F76-41B2-A0BF-9BFF1F3E5FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7042BB3F-0F76-41B2-A0BF-9BFF1F3E5FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3D81599-EEBB-4376-8FBE-01474F3B74B6}
+	EndGlobalSection
+EndGlobal

@@ -1,6 +1,6 @@
 ﻿namespace bri4iparts.Data.Models
 {
-	internal class Log
+	public class Log
 	{
 		public int Id { get; set; }
 		public DateTime ChangeDate { get; set; }

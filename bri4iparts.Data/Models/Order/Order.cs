@@ -1,6 +1,6 @@
 ﻿namespace bri4iparts.Data.Models
 {
-	internal class Order
+	public class Order
 	{
 		public int Id { get; set; }
 		public int CustomerId { get; set; }

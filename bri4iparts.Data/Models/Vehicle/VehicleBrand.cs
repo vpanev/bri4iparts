@@ -1,6 +1,6 @@
 ﻿namespace bri4iparts.Data.Models
 {
-	internal class VehicleBrand
+	public class VehicleBrand
 	{
 		public int Id { get; set; }
 		public int VehicleCategoryId { get; set; }

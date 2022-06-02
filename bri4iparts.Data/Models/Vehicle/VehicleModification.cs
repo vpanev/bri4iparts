@@ -1,6 +1,6 @@
 ﻿namespace bri4iparts.Data.Models
 {
-	internal class VehicleModification
+	public class VehicleModification
 	{
 		public int Id { get; set; }
 		public int Cubature { get; set; }

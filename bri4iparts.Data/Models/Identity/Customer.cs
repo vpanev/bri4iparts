@@ -2,7 +2,7 @@
 
 namespace bri4iparts.Data.Models
 {
-	internal class Customer : IdentityUser
+	public class Customer : IdentityUser
 	{
 		public string FirstName { get; set; }
 		public string LastName { get; set; }

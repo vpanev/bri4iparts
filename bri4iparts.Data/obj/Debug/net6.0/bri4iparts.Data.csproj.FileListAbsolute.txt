@@ -1,0 +1,14 @@
+D:\IT WORK\Projects\bri4iparts\bri4iparts.Data\bin\Debug\net6.0\bri4iparts.Data.deps.json
+D:\IT WORK\Projects\bri4iparts\bri4iparts.Data\bin\Debug\net6.0\bri4iparts.Data.runtimeconfig.json
+D:\IT WORK\Projects\bri4iparts\bri4iparts.Data\bin\Debug\net6.0\bri4iparts.Data.dll
+D:\IT WORK\Projects\bri4iparts\bri4iparts.Data\bin\Debug\net6.0\bri4iparts.Data.pdb
+D:\IT WORK\Projects\bri4iparts\bri4iparts.Data\obj\Debug\net6.0\bri4iparts.Data.csproj.AssemblyReference.cache
+D:\IT WORK\Projects\bri4iparts\bri4iparts.Data\obj\Debug\net6.0\bri4iparts.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\IT WORK\Projects\bri4iparts\bri4iparts.Data\obj\Debug\net6.0\bri4iparts.Data.AssemblyInfoInputs.cache
+D:\IT WORK\Projects\bri4iparts\bri4iparts.Data\obj\Debug\net6.0\bri4iparts.Data.AssemblyInfo.cs
+D:\IT WORK\Projects\bri4iparts\bri4iparts.Data\obj\Debug\net6.0\bri4iparts.Data.csproj.CoreCompileInputs.cache
+D:\IT WORK\Projects\bri4iparts\bri4iparts.Data\obj\Debug\net6.0\bri4iparts.Data.dll
+D:\IT WORK\Projects\bri4iparts\bri4iparts.Data\obj\Debug\net6.0\refint\bri4iparts.Data.dll
+D:\IT WORK\Projects\bri4iparts\bri4iparts.Data\obj\Debug\net6.0\bri4iparts.Data.pdb
+D:\IT WORK\Projects\bri4iparts\bri4iparts.Data\obj\Debug\net6.0\bri4iparts.Data.genruntimeconfig.cache
+D:\IT WORK\Projects\bri4iparts\bri4iparts.Data\obj\Debug\net6.0\ref\bri4iparts.Data.dll

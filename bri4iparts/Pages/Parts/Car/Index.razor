@@ -1,0 +1,18 @@
+﻿@page "/"
+
+<div class="page-content">
+    @if (vehicleBrands != null)
+    {
+        @foreach (var brand in vehicleBrands)
+        {
+            <div class="brand-card">
+                <a class="card-link" href="/brandmodel/@brand.Id">
+                    <RadzenCard id="card">
+                        <img src="images/brandlogos/@brand.PictureUrl"/>
+                        <h5>Авточасти @brand.Name</h5>
+                    </RadzenCard>
+                </a>
+            </div>
+        }
+    }
+</div>

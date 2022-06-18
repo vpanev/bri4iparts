@@ -16,6 +16,9 @@ a, .btn-link {
 
 .content {
     padding-top: 1.1rem;
+    max-width: 80%;
+    margin-left: 10%;
+    max-height: 1400px;
 }
 
 .valid.modified:not([type=checkbox]) {

@@ -1,0 +1,23 @@
+﻿@page "/users"
+@using bri4iparts.Data.Models
+
+<div class="page-content">
+     <h3>Потребители</h3>
+    @if (users != null)
+            {
+                <RadzenDataGrid AllowColumnResize="true" FilterMode="FilterMode.Advanced" PageSize="10" AllowPaging="true" AllowSorting="true"
+                            Data="@users" TItem="Customer" ColumnWidth="300px" LogicalFilterOperator="LogicalFilterOperator.Or">
+                    <Columns>
+                        <RadzenDataGridColumn TItem="Customer" Property="Id" Title="#" Width="160px" Sortable="true" Filterable="false" TextAlign="TextAlign.Center" />
+                        <RadzenDataGridColumn TItem="Customer" Property="FirstName" Title="Име" Width="70px" TextAlign="TextAlign.Center" />
+                        <RadzenDataGridColumn TItem="Customer" Property="LastName" Title="Фамилия" Width="70px" TextAlign="TextAlign.Center" />
+                        <RadzenDataGridColumn TItem="Customer" Property="UserName" Title="Username" Width="100px" TextAlign="TextAlign.Center" />
+                        <RadzenDataGridColumn TItem="Customer" Property="Id" Width="140px" TextAlign="TextAlign.Center" Sortable="false">
+                            <Template Context="data">
+                                <RadzenButton Click=@(() => MakeUserAdmin(data.Id)) Text="Направи Админ" Icon="add_circle_outline" ButtonStyle="ButtonStyle.Primary" Style="width: 200px !important;"/>
+                            </Template>
+                        </RadzenDataGridColumn>
+                    </Columns>
+                </RadzenDataGrid>
+            }
+</div>

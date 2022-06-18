@@ -1,0 +1,85 @@
+﻿@page "/products/{ModificationId:int}/{SubCategoryId:int}"
+
+<div class="products-container">
+    @if (chosenModel != null)
+    {
+        <div class="chosen-car-box">
+            <img src="images/vehiclemodels/@chosenModel.PictureUrl" class="chosen-model-img" />
+            <div class="chosen-car-info-col1">
+                <p class="car-brand">Марка: @vehicleBrand.Name</p>
+                <p class="car-model">Модел: @chosenModel.Name</p>
+                <p class="car-modif">Модификация: @modification.Cubature - @modification.FuelType</p>
+            </div>
+            <div class="chosen-car-info-col2">
+                <p class="car-engine-code">Код на двигателя: @modification.EngineCode</p>
+                <p class="car-years">Година: @chosenModel.YearOfRelease.ToString("MM-yyyy") / @chosenModel.YearOfEnd.ToString("MM-yyyy")</p>
+                <p class="car-hp">Мощност: @modification.HorsePower к.с / @modification.Kilowats kW</p>
+            </div>
+        </div>
+    }
+    <div class="product-sort">
+        <div class="price_slider">
+            <h6>Ценова Рамка</h6>
+            <h6>0 - 1000</h6>
+
+            <p>От: </p>
+            <MatSlider Value="@minPrice" Discrete="true" Pin="true" TValue="int" ValueMin="0" ValueMax="1000" ValueChanged="@OnMinPriceValueChange" Class="price_slider_bar" />
+            <p>До: </p>
+            <MatSlider Value="@maxPrice" Discrete="true" Pin="true" TValue="int" ValueMin="0" ValueMax="1000" ValueChanged="@OnMaxPriceValueChange" Class="price_slider_bar" />
+        </div>
+
+        <div class="sort" style="margin-bottom: 20px;">
+            <RadzenCard>
+                <p style="font-size: 14px; margin-left: 50px;">Сортирай по:</p>
+                <RadzenRadioButtonList
+                    @bind-Value=@sortOption
+                    TValue="int" 
+                    Change=@(OnSortSelectChange)
+                    Orientation="Orientation.Vertical">
+                    <Items>
+                        <RadzenRadioButtonListItem Text="Най-ниска цена" Value="1" />
+                        <RadzenRadioButtonListItem Text="Най-висока цена" Value="2" />
+                        <RadzenRadioButtonListItem Text="Дата" Value="3" />
+                    </Items>
+                </RadzenRadioButtonList>
+            </RadzenCard>
+        </div>
+
+        <div class="manufacturers">
+            <RadzenCard>
+                <p style="font-size: 14px; margin-left: 50px;">Производител</p>
+                <RadzenListBox AllowFiltering="true"
+                               FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive"
+                               @bind-Value=@selectedManufacturers
+                               Multiple="true"
+                               Data=@manufacturers
+                               Change=@(OnManufacturerChange)
+                               Style="height: 250px"
+                               Placeholder="Търси"
+                               Class="w-100" />
+            </RadzenCard>
+        </div>
+    </div>
+    <div class="page-content">
+        @if (filteredProducts == null || filteredProducts.Count == 0)
+        {
+            <h6>Все още няма добавени модели в тази секция!</h6>
+        }
+
+        @if (filteredProducts != null)
+        {
+            @foreach (var product in filteredProducts)
+            {
+                <div class="product-card">
+                    <RadzenCard id="productcard">
+                        <img src="images/products/@product.PictureUrl" class="model-card-image" />
+                        <img src="images/manufacturers/@product.ProductManufacturer.PictureUrl" class="manufacturer-image" />
+                        <p>@product.Name</p>
+                        <p class="price">@product.Price лв.</p>
+                        <RadzenButton Click=@(() => OrderProduct(product)) Text="Поръчай" Icon="add_circle_outline" ButtonStyle="ButtonStyle.Secondary" id="buy-button" />
+                    </RadzenCard>
+                </div>
+            }
+        }
+    </div>
+</div>

@@ -19,8 +19,108 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Admin/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Admin/Logs.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTG9ncy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Admin/Orders/EditOrder.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cT3JkZXJzXEVkaXRPcmRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Admin/Orders/Orders.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cT3JkZXJzXE9yZGVycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Admin/Products/ProductCategories/AddProductCategory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdHNcUHJvZHVjdENhdGVnb3JpZXNcQWRkUHJvZHVjdENhdGVnb3J5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Admin/Products/ProductCategories/AdminProductCategories.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdHNcUHJvZHVjdENhdGVnb3JpZXNcQWRtaW5Qcm9kdWN0Q2F0ZWdvcmllcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Admin/Products/ProductCategories/EditProductCategory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdHNcUHJvZHVjdENhdGVnb3JpZXNcRWRpdFByb2R1Y3RDYXRlZ29yeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Admin/Products/ProductManufacturers/AddProductManufacturer.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdHNcUHJvZHVjdE1hbnVmYWN0dXJlcnNcQWRkUHJvZHVjdE1hbnVmYWN0dXJlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Admin/Products/ProductManufacturers/AdminProductManufacturers.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdHNcUHJvZHVjdE1hbnVmYWN0dXJlcnNcQWRtaW5Qcm9kdWN0TWFudWZhY3R1cmVycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Admin/Products/ProductManufacturers/EditProductManufacturer.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdHNcUHJvZHVjdE1hbnVmYWN0dXJlcnNcRWRpdFByb2R1Y3RNYW51ZmFjdHVyZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Admin/Products/ProductSubCategories/AdminProductSubCategories.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdHNcUHJvZHVjdFN1YkNhdGVnb3JpZXNcQWRtaW5Qcm9kdWN0U3ViQ2F0ZWdvcmllcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Admin/Products/Products/AdminProducts.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdHNcUHJvZHVjdHNcQWRtaW5Qcm9kdWN0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Admin/Users.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVXNlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Admin/Vehicles/VehicleBrandModels/AdminVehicleBrandModels.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVmVoaWNsZXNcVmVoaWNsZUJyYW5kTW9kZWxzXEFkbWluVmVoaWNsZUJyYW5kTW9kZWxzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Admin/Vehicles/VehicleBrands/AdminVehicleBrands.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVmVoaWNsZXNcVmVoaWNsZUJyYW5kc1xBZG1pblZlaGljbGVCcmFuZHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Admin/Vehicles/VehicleCategories/AdminVehicleCategories.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVmVoaWNsZXNcVmVoaWNsZUNhdGVnb3JpZXNcQWRtaW5WZWhpY2xlQ2F0ZWdvcmllcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Admin/Vehicles/VehicleModels/AdminVehicleModels.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVmVoaWNsZXNcVmVoaWNsZU1vZGVsc1xBZG1pblZlaGljbGVNb2RlbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Admin/Vehicles/VehicleModifications/AdminVehicleModifications.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVmVoaWNsZXNcVmVoaWNsZU1vZGlmaWNhdGlvbnNcQWRtaW5WZWhpY2xlTW9kaWZpY2F0aW9ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Parts/Car/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFydHNcQ2FyXEluZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Parts/Car/VehicleBrandModels.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFydHNcQ2FyXFZlaGljbGVCcmFuZE1vZGVscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Parts/Car/VehicleModels.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFydHNcQ2FyXFZlaGljbGVNb2RlbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Parts/Car/VehicleModifications.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFydHNcQ2FyXFZlaGljbGVNb2RpZmljYXRpb25zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Parts/Products/ProductCategory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFydHNcUHJvZHVjdHNcUHJvZHVjdENhdGVnb3J5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Parts/Products/Products.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFydHNcUHJvZHVjdHNcUHJvZHVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Pages/Parts/Products/ProductSubCategory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFydHNcUHJvZHVjdHNcUHJvZHVjdFN1YkNhdGVnb3J5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IT WORK/Projects/bri4iparts/bri4iparts/Shared/LoginDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/IT WORK/Projects/bri4iparts/bri4iparts/Shared/SurveyPrompt.razor]

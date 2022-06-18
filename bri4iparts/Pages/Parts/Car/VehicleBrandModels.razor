@@ -1,0 +1,23 @@
+﻿@page "/brandmodel/{Id:int}"
+
+<div class="page-content">
+    @if (vehicleBrandModels == null || vehicleBrandModels.Count == 0)
+    {
+        <h6>Все още няма добавени модели в тази секция!</h6>
+    }
+
+    @if (vehicleBrandModels != null)
+    {
+        @foreach (var brandmodel in vehicleBrandModels)
+        {
+            <div class="brand-card">
+                <a class="card-link" href="/model/@brandmodel.Id">
+                    <RadzenCard id="card">
+                        <img src="images/brandmodels/@brandmodel.PictureUrl" class="brandmodel-card-image"/>
+                        <h5>@brandmodel.Name</h5>
+                    </RadzenCard>
+                </a>
+            </div>
+        }
+    }
+</div>

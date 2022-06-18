@@ -1,0 +1,16 @@
+﻿@using Microsoft.AspNetCore.Components.Authorization
+<AuthorizeView>
+    <Authorized>
+        <NavLink class="py-2 d-none d-md-inline-block" href="Identity/Account/Manage">
+            Здравей, @context.User.Identity.Name!
+        </NavLink>
+        <NavLink class="py-2 d-none d-md-inline-block" href="/Identity/Account/Logout?returnUrl=%2F" method="post">
+            Изход
+        </NavLink>
+    </Authorized>
+    <NotAuthorized>
+        <NavLink class="py-2 d-none d-md-inline-block" href="/login" style="margin-left: 15%; position: absolute">
+            <span class="oi oi-account-login" aria-hidden="true"></span> Вход
+        </NavLink>
+    </NotAuthorized>
+</AuthorizeView>

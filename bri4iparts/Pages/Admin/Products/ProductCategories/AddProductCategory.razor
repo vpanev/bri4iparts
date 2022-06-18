@@ -1,0 +1,24 @@
+﻿@page "/admin/addproductcategory"
+
+<div class="page-content">
+    <div class="col-md-6 offset-md-3 mt-5">
+        <h3>Добави продуктова категория</h3>
+        <br/>
+        <br/>
+        <EditForm Model="@productCategory" OnValidSubmit="OnSubmit" Context="formContext">
+
+            <div class="form-group">
+                <label for="name">Име на категория</label>
+                <InputText name="name" class="form-control" id="name" @bind-Value="productCategory.Name" placeholder="Име на категория" required="required" />
+            </div>
+            <br/>
+            <br/>
+            <div class="form-group">
+                <label class="mr-2">Снимка : </label>
+                <InputFile type="file" name="file" OnChange="OnInputFileChange" />
+            </div>
+            <hr>
+            <button type="submit" class="btn btn-primary">Добави</button>
+        </EditForm>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+﻿@page "/orders"
+@using bri4iparts.Data.Models
+
+<div class="page-content">
+    <h3>Поръчки</h3>
+    @if (orders != null)
+    {
+        <RadzenDataGrid AllowColumnResize="true" FilterMode="FilterMode.Simple"
+                        FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive"
+                        AllowFiltering="true"
+                        PageSize="10" AllowPaging="true" AllowSorting="true"
+                        Data="@orders" TItem="Order" ColumnWidth="300px"
+                        LogicalFilterOperator="LogicalFilterOperator.Or">
+            <Columns>
+                <RadzenDataGridColumn TItem="Order" Property="Id" Title="#" Width="50px" Sortable="true" Filterable="false" TextAlign="TextAlign.Center" />
+                <RadzenDataGridColumn TItem="Order" Property="CustomerName" Filterable="true" Title="Име" Width="100px" TextAlign="TextAlign.Center" />
+                <RadzenDataGridColumn TItem="Order" Property="ShipmentAddress" Title="Адрес за доставка" Width="100px" TextAlign="TextAlign.Center" />
+                <RadzenDataGridColumn TItem="Order" Property="OrderDate" Title="Дата на поръчка" Width="100px" TextAlign="TextAlign.Center" Filterable="false"/>
+                <RadzenDataGridColumn TItem="Order" Property="ShipmentDate" Title="Дата на доставка" Width="100px" TextAlign="TextAlign.Center" Filterable="false"/>
+                <RadzenDataGridColumn TItem="Order" Property="Id" Width="100px" TextAlign="TextAlign.Center" Sortable="false" Filterable="false">
+                    <Template Context="data">
+                        <RadzenButton Click=@(() => EditOrder(data)) Text="Редакция" Icon="add_circle_outline" ButtonStyle="ButtonStyle.Primary" Style="width: 150px !important;"/>
+                    </Template>
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="Order" Property="Id" Width="100px" TextAlign="TextAlign.Center" Sortable="false" Filterable="false">
+                    <Template Context="data">
+                        <RadzenButton Click=@(() => DeleteOrder(data.Id)) Text="Изтрий" Icon="add_circle_outline" ButtonStyle="ButtonStyle.Danger" Style="width: 150px !important;"/>
+                    </Template>
+                </RadzenDataGridColumn>
+            </Columns>
+        </RadzenDataGrid>
+    }
+</div>

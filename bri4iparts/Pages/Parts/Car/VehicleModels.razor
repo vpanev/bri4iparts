@@ -1,0 +1,24 @@
+﻿@page "/model/{Id:int}"
+
+<div class="page-content">
+    @if (vehicleModels == null || vehicleModels.Count == 0)
+    {
+        <h6>Все още няма добавени модели в тази секция!</h6>
+    }
+
+    @if (vehicleModels != null)
+    {
+        @foreach (var model in vehicleModels)
+        {
+            <div class="brand-card">
+                <a class="card-link" href="/modification/@model.Id">
+                    <RadzenCard id="card">
+                        <img src="images/vehiclemodels/@model.PictureUrl" class="model-card-image"/>
+                        <h5>@model.Name</h5>
+                        <p class="model-card-years">@model.YearOfRelease.ToString("dd-MM-yyyy") - @model.YearOfEnd.ToString("dd-MM-yyyy")</p>
+                    </RadzenCard>
+                </a>
+            </div>
+        }
+    }
+</div>

@@ -1,0 +1,38 @@
+﻿@page "/admin/productcategories"
+@using bri4iparts.Data.Models
+
+<div class="page-content">
+    <h3>Категории продукти</h3>
+    @* <AuthorizeView Roles="Admin"> *@
+        <RadzenButton Click=@(AddProductCategory) Text="Добави категория" Icon="add_circle_outline" ButtonStyle="ButtonStyle.Secondary" id="add-button" />
+    @* </AuthorizeView> *@
+    @if (productCategories != null)
+    {
+        <RadzenDataGrid AllowColumnResize="true" FilterMode="FilterMode.Simple"
+                        FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive"
+                        AllowFiltering="true"
+                        PageSize="10" AllowPaging="true" AllowSorting="true"
+                        Data="@productCategories" TItem="ProductCategory" ColumnWidth="300px"
+                        LogicalFilterOperator="LogicalFilterOperator.Or">
+            <Columns>
+                <RadzenDataGridColumn TItem="ProductCategory" Property="Id" Title="#" Width="50px" Sortable="true" Filterable="false" TextAlign="TextAlign.Center" />
+                <RadzenDataGridColumn TItem="ProductCategory" Property="Name" Filterable="true" Title="Име" Width="100px" TextAlign="TextAlign.Center" />
+                <RadzenDataGridColumn TItem="ProductCategory" Title="Снимка" Width="100px" TextAlign="TextAlign.Center" Sortable="false">
+                    <Template Context="data">
+                        <img src="images/productcategories/@data.PictureUrl" style="width: 40px; height: 40px; border-radius: 8px;">
+                    </Template>
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="ProductCategory" Property="Id" Width="100px" TextAlign="TextAlign.Center" Sortable="false" Filterable="false">
+                    <Template Context="data">
+                        <RadzenButton Click=@(() => EditProductCategory(data)) Text="Редакция" Icon="add_circle_outline" ButtonStyle="ButtonStyle.Primary" Style="width: 150px !important;"/>
+                    </Template>
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="ProductCategory" Property="Id" Width="100px" TextAlign="TextAlign.Center" Sortable="false" Filterable="false">
+                    <Template Context="data">
+                        <RadzenButton Click=@(() => DeleteProductCategory(data.Id)) Text="Изтрий" Icon="add_circle_outline" ButtonStyle="ButtonStyle.Danger" Style="width: 150px !important;"/>
+                    </Template>
+                </RadzenDataGridColumn>
+            </Columns>
+        </RadzenDataGrid>
+    }
+</div>

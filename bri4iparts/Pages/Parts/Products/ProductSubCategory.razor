@@ -1,0 +1,23 @@
+﻿@page "/productsubcategory/{CategoryId:int}/{ModificationId:int}"
+
+<div class="page-content">
+    @if (subCategories == null || subCategories.Count == 0)
+    {
+        <h6>Все още няма добавени модели в тази секция!</h6>
+    }
+
+    @if (subCategories != null)
+    {
+        @foreach (var subCategory in subCategories)
+        {
+            <div class="brand-card">
+                <a class="card-link" href="/products/@ModificationId/@subCategory.Id">
+                    <RadzenCard id="card">
+                        <img src="images/productsubcategories/@subCategory.PictureUrl" class="model-categories-image"/>
+                        <h5>@subCategory.Name</h5>
+                    </RadzenCard>
+                </a>
+            </div>
+        }
+    }
+</div>

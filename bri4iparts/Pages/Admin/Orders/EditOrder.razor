@@ -1,0 +1,48 @@
+﻿@page "/editorder/{Id:int}"
+
+<div class="page-content">
+    @* <AuthorizeView Context="authContext" Roles="Admin"> *@
+    @* <Authorized> *@
+        <div class="col-md-6 offset-md-3 mt-5">
+            <h1>Промени поръчка</h1>
+            <EditForm Model="@order" OnValidSubmit="OnSubmit" Context="formContext">
+
+                <div class="form-group">
+                    <label for="customer">Клиент</label>
+                    <InputText name="customer" class="form-control" id="customer" @bind-Value="order.CustomerName" required="required" disabled />
+                </div>
+
+                @* <div class="form-group"> *@
+                @*     <label for="orderNum" required="required">Номер на поръчка</label> *@
+                @*     <InputText name="orderNum" class="form-control" id="orderNum" @bind-Value="order.Id" placeholder="Order Number" /> *@
+                @* </div> *@
+
+                <div class="form-group">
+                    <label for="orderAddress" required="required">Адрес за доставка</label>
+                    <InputText name="orderAddress" class="form-control" id="orderAddress" @bind-Value="order.ShipmentAddress" placeholder="Address" />
+                </div>
+
+                <div class="form-group">
+                    <label for="productName" required="required">Продукт</label>
+                    <InputText name="productName" class="form-control" id="productName" @bind-Value="@productName" placeholder="Продукт" disabled />
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label for="date" required="required">Дата на поръчване</label>
+                            <InputDate name="date" class="form-control" id="date" style="width: 140px !important;" @bind-Value="order.OrderDate" disabled/>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="ship" required="required">Очаквана дата на пристигане</label>
+                            <InputDate name="ship" class="form-control" id="ship" @bind-Value="order.ShipmentDate" />
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Промени</button>
+            </EditForm>
+        </div>
+@*     </Authorized> *@
+@* </AuthorizeView> *@
+</div>

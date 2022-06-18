@@ -278,3 +278,6 @@ D:\IT WORK\Projects\bri4iparts\bri4iparts\bin\Debug\net6.0\Microsoft.OpenApi.dll
 D:\IT WORK\Projects\bri4iparts\bri4iparts\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\IT WORK\Projects\bri4iparts\bri4iparts\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\IT WORK\Projects\bri4iparts\bri4iparts\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\IT WORK\Projects\bri4iparts\bri4iparts\bin\Debug\net6.0\MatBlazor.dll
+D:\IT WORK\Projects\bri4iparts\bri4iparts\bin\Debug\net6.0\Radzen.Blazor.dll
+D:\IT WORK\Projects\bri4iparts\bri4iparts\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll

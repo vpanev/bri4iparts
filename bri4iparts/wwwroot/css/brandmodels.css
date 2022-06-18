@@ -1,0 +1,19 @@
+.model-card-years {
+    margin: 0 0 0 35%;
+    font-size: 12px;
+}
+
+.model-card-image {
+    margin: -15px 0 0 -15px !important;
+    border-radius: 5%;
+}
+
+.brandmodel-card-image {
+    margin: -16px 0 0 -18px !important;
+    border-radius: 5%;
+}
+.model-categories-image {
+    margin: -15px 0 0 0 !important;
+    height: 60px !important;
+    width: 100px !important;
+}

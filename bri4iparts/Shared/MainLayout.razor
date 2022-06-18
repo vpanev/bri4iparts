@@ -1,17 +1,69 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+<MatThemeProvider Theme="@theme">
+    <header class="site-header sticky-top py-2">
+        <img src="images/bri4iparts_logo.png" class="logo">
+        <nav class="container d-flex flex-column flex-md-row">
+            <NavLink class="py-2 d-none d-md-inline-block" href="/" Match="NavLinkMatch.All">
+                <i class="fa-solid fa-car"></i> Авточасти
+            </NavLink>
+            <NavLink class="py-2 d-none d-md-inline-block" href="clothes">
+                <i class="fa-solid fa-truck"></i> Камиони
+            </NavLink>
+            @* <AuthorizeView Roles="User, UltraUser"> *@
+            <NavLink class="py-2 d-none d-md-inline-block" href="orders">
+                <i class="fa-solid fa-motorcycle"></i> Мотори
+            </NavLink>
+            @* </AuthorizeView> *@
+            @* <AuthorizeView Roles="Admin"> *@
+            @*     <Authorized> *@
+            <NavLink class="py-2 d-none d-md-inline-block" href="orders">
+                <i class="fa-solid fa-oil-can"></i> Масла
+            </NavLink>
+            <NavLink class="py-2 d-none d-md-inline-block" href="admin">
+                <span class="oi oi-plus" aria-hidden="true"></span> Админ панел
+            </NavLink>
+            <div class="nav-menu-contacts">
+                <span class="oi oi-phone" style="color: crimson;"></span>
+                <a href="tel:+359878123345"><p>+359878123345</p></a>
+            </div>
+            @*     </Authorized> *@
+            @* </AuthorizeView> *@
+            <div class="logindisplay">
+                <LoginDisplay></LoginDisplay>
+            </div>
+        </nav>
+    </header>
+</MatThemeProvider>
 
-    <div class="main">
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
-
-        <div class="content px-4">
+<main class="content px-4">
+    <ErrorBoundary @ref="@errorBoundary">
+        <ChildContent>
             @Body
-        </div>
-    </div>
-</div>
+        </ChildContent>
+        <ErrorContent>
+            <div class="wrapper content-wrapper">
+                <h2>Възникна проблем</h2>
+                <div>
+                    <a href="" class="btn btn-border btn-m">Върнете се към начало</a>
+                </div>
+            </div>
+        </ErrorContent>
+    </ErrorBoundary>
+</main>
+
+@code {
+    // private bool expandSubNav;
+
+    private ErrorBoundary errorBoundary;
+    protected override void OnParametersSet()
+    {
+        errorBoundary?.Recover();
+    }
+
+    MatTheme theme = new MatTheme()
+        {
+            Primary = MatThemeColors.Red._400.Value,
+            Secondary = MatThemeColors.Grey._600.Value
+        };
+}

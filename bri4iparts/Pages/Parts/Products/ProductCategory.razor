@@ -1,0 +1,23 @@
+﻿@page "/productcategory/{ModificationId:int}"
+
+<div class="page-content">
+    @if (categories == null || categories.Count == 0)
+    {
+        <h6>Все още няма добавени модели в тази секция!</h6>
+    }
+
+    @if (categories != null)
+    {
+        @foreach (var category in categories)
+        {
+            <div class="brand-card">
+                <a class="card-link" href="/productsubcategory/@category.Id/@ModificationId">
+                    <RadzenCard id="card">
+                        <img src="images/productcategories/@category.PictureUrl" class="model-categories-image"/>
+                        <h5>@category.Name</h5>
+                    </RadzenCard>
+                </a>
+            </div>
+        }
+    }
+</div>

@@ -1,0 +1,32 @@
+﻿@page "/modification/{Id:int}"
+
+<div class="page-content">
+    @if (vehicleModifications == null || vehicleModifications.Count == 0)
+    {
+        <h6>Все още няма добавени модели в тази секция!</h6>
+    }
+
+    @if (vehicleModifications != null)
+    {
+        <MatTable Items="sortedData" AllowSelection="true" SelectionChanged="OnSelectRow" UseSortHeaderRow="true" ShowPaging="false"> 
+            <MatTableHeader>
+                <MatSortHeaderRow SortChanged="@SortData">
+                    <MatSortHeader SortId="cubature"><span style="width: 150px">Кубатура</span></MatSortHeader>
+                    <MatSortHeader SortId="horsepower"><span style="width: 150px">Коне</span></MatSortHeader>
+                    <MatSortHeader SortId="kilowats"><span style="width: 100px">Киловати</span></MatSortHeader>
+                    <MatSortHeader SortId="year"><span style="width: 180px">Година</span></MatSortHeader>
+                    <MatSortHeader SortId="fueltype"><span style="width: 100px">Гориво</span></MatSortHeader>
+                    <MatSortHeader SortId="enginecode"><span style="width: 100px">Код</span></MatSortHeader>
+                </MatSortHeaderRow>
+            </MatTableHeader>
+            <MatTableRow>
+                <td>@context.Cubature</td>
+                <td>@context.HorsePower</td>
+                <td>@context.Kilowats</td>
+                <td>@context.YearOfRelease.ToString("dd-MM-yyyy") - @context.YearOfEnd.ToString("dd-MM-yyyy")</td>
+                <td>@context.FuelType</td>
+                <td>@context.EngineCode</td>
+            </MatTableRow>
+        </MatTable>
+    }
+</div>
